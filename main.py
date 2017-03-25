@@ -40,4 +40,4 @@ class MainHandler(webapp2.RequestHandler):
 
         self.response.write(content)
 
-app = webapp2.WSGIApplication(('/', MainHandler), debug=True)
+app = webapp2.WSGIApplication([('/', MainHandler)], debug=True)
